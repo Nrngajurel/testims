@@ -17,7 +17,7 @@ class PurchaseFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => 'Purchase '.$this->faker->uuid,
         ];
     }
 }

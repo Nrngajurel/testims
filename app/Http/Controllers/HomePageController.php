@@ -1,6 +1,3 @@
-## Test Ims
-
-```php
 <?php
 
 namespace App\Http\Controllers;
@@ -62,5 +59,3 @@ class HomePageController extends Controller
         return 'success';
     }
 }
-
-```

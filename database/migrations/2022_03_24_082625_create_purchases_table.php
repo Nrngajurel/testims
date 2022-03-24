@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->unsignedBigInteger('vendor_id')->nullable();
+            $table->foreign('vendor_id')->references('id')->on('vendors')->nullOnDelete();
             $table->timestamps();
         });
     }
